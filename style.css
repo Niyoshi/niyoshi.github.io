@@ -19,7 +19,7 @@ h1 {
   box-sizing: border-box;
   position: relative;
   left: 12.25vw;
-  right: 12.25vw;
+  right: -12.25vw;
   top:0;
   bottom: 0;
 }
