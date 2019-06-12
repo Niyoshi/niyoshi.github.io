@@ -125,7 +125,7 @@ h1 {
 .eight{
   grid-column: 2/4;
   grid-row: 6/8;
-  border-width: 1px 0px 0px 1px;
+  border-width: 1px 1px 0px 1px;
 }
 
 .nine{
