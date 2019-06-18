@@ -158,6 +158,150 @@
     grid-column: 1/2;
     grid-row: 7/10;
   }
-
-
+  
 }
+
+@media screen and (max-width: 576px){
+  .container {
+    grid-template-columns: auto 68px 43px 107px 49px 31px 77px auto 0% 0%;
+    grid-template-rows: 11% 15% 19.3% 6.7% 21% 5% 9% 13% 0%;
+  }
+  
+  .white-item {
+    grid-column: 9/10;
+    grid-row: 9/10;
+  }
+
+  .projects {
+    grid-column: 2/6;
+    grid-row: 5/6;
+    border-width: 0px;
+  } 
+
+  .story{
+    grid-column: 6/9;
+    grid-row: 7/9;
+    border-width: 0px 1px 1px 1px;
+  }
+
+  .studio{
+    grid-column: 2/5;
+    grid-row: 2/3;
+    border-width: 0px;
+  }
+
+  .approvals{
+    grid-column: 5/8;
+    grid-row: 3/4;
+    border-width: 1px 0px 0px 1px;
+  }
+
+  .random-1{
+    grid-column: 7/8;
+    grid-row: 1/2;
+    border-width: 1px 0px 1px 0px;
+  }
+
+  .random-2{
+    grid-column: 1/2;
+    grid-row: 7/8;
+    border-width: 0px 1px 0px 1px;
+  }
+
+  .logo{
+    grid-column: 2/5;
+    grid-row: 3/5;
+    border-width: 1px 0px 1px 0px;
+  }
+  
+  .jpp-logo{
+    justify-self: start;
+    width: 45%;
+    padding: 15px;
+  }
+
+  .one{
+    grid-column: 1/7;
+    grid-row: 1/2;
+    border-width: 1px;
+  }
+
+  .two{
+    grid-column: 8/9;
+    grid-row: 1/2;
+    border-width: 1px;
+  }
+
+  .three{
+    grid-column: 1/2;
+    grid-row: 2/5;
+    border-width: 0px 1px 1px 1px;
+  }
+
+  .four{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    border-width: 0px 1px 0px 1px;
+  }
+
+  .five{
+    grid-column: 5/8;
+    grid-row: 4/5;
+    border-width: 1px 0px 1px 1px;
+  }
+
+  .six{
+    grid-column: 8/9;
+    grid-row: 3/7;
+    border-width: 1px;
+  }
+
+  .seven{
+    grid-column: 1/2;
+    grid-row: 5/7;
+    border-width: 0px 1px 1px 1px;
+  }
+
+  .eight{
+    grid-column: 6/8;
+    grid-row: 5/7;
+    border-width: 0px 0px 1px 1px;
+  }
+
+  .nine{
+    grid-column: 2/6;
+    grid-row: 6/7;
+    border-width: 1px 0px 1px 0px;
+  }
+
+  .ten{
+    grid-column: 2/4;
+    grid-row: 7/8;
+    border-width: 0px;
+  }
+
+  .eleven{
+    grid-column: 1/4;
+    grid-row: 8/9;
+    border-width: 1px 0px 1px 1px;
+  }
+
+  .twelve{
+    grid-column: 4/6;
+    grid-row: 7/9;
+    border-width: 0px 0px 1px 1px;
+  }
+  
+}
+
+@media screen and (max-width: 414px){
+  
+  .container{
+    grid-template-columns: 0% 18% 11.5% 28.5% 13% 8.5% 20.5% 0% 0% 0%;
+    border: 0px;
+  }
+  .random-2{
+    grid-column: 2/3;
+    grid-row: 7/8;
+    border-width: 0px 1px 0px 1px;
+  }
