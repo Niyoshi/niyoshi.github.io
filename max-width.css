@@ -51,6 +51,7 @@
     grid-row: 7/8;
     border-width: 1px 0px 1px 0px;
     background-size: 35%;
+    background-position: 5% 10%;
   }
 
   .one{
@@ -208,6 +209,8 @@
     grid-row: 3/5;
     border-width: 1px 0px 1px 0px;
     background-size: 45%;
+    background-position: 5% 10%;
+
   }
 
   .one{
@@ -294,4 +297,9 @@
     grid-column: 2/3;
     grid-row: 7/8;
     border-width: 0px 1px 0px 1px;
+  }
+
+  .logo{
+    background-position: 10% 10%;
+
   }
