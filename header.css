@@ -1,0 +1,52 @@
+nav.topnav { 
+/*   nav element that HAS topnav class */
+  text-align: center;
+}
+
+.topnav ul { 
+/*   topnav class who has a ul child, ul doesn't necessarily HAVE topnav class */
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  padding-right: 5em;
+}
+
+.topnav li {
+  display: inline-block;
+  margin: 0 1em;
+  height: 5em;
+  line-height: 5em;
+}
+
+.topnav li a {
+  color: black;
+  text-decoration: none;
+}
+
+.topnav li a:hover:not(.active) {
+  color: #AA8735;
+}
+
+.topnav .active {
+  color: #AA8735;
+}
+
+h1 {
+  font-style: normal;
+  color: black;
+  opacity: 0;
+  font-size: 16px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.logo{
+  background: url('https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fjpp%20logo.png?v=1560122894649');
+  background-repeat: no-repeat;
+  width: 5em;
+  height: 5em;
+  background-size: 5em;
+  padding: 0px;
+  display: inline-block;
+  float: left;
+}
