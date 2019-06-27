@@ -210,10 +210,6 @@ a.brown-links{
   scale: 1;
 }
 
-.brown-item img:hover{
-  transform: scale(2);
-}
-
 a.brown-links:hover{
   opacity: 1;
   transition: opacity 0.8s;
