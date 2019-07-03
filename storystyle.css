@@ -43,11 +43,14 @@ h1 {
   grid-column: 2/3;
   display:flex;
   justify-content: center;
-  align-items: center;
 }
 
 .topnav ul {
   padding-right: 0;
+}
+
+.topnav li {
+  line-height: 2em;
 }
 
 .flex-container-item {
@@ -80,7 +83,7 @@ h1 {
   height: 18em;
   box-sizing: border-box;
   padding: 5% 5% 5% 0%;
-  background-image: 'dad.jpeg'
+  background-image: url(dad.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
 }
