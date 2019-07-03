@@ -43,9 +43,9 @@ h1 {
 .logo{
   background: url('https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fjpp%20logo.png?v=1560122894649');
   background-repeat: no-repeat;
-  width: 5em;
-  height: 5em;
-  background-size: 5em;
+  width: 6em;
+  height: 6em;
+  background-size: contain;
   padding: 0px;
   display: inline-block;
   float: left;
