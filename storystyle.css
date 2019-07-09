@@ -33,8 +33,9 @@ body {
   scroll-behavior: smooth;
 }
 
-.flex-container::-webkit-scrollbar { 
-  width: 0 !important 
+.flex-container::-webkit-scrollbar,
+.flex-container::-moz-scrollbar { 
+  width: 0 !important; 
 }
 
 .flex-container-item {
