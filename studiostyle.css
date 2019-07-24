@@ -5,4 +5,348 @@ body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
   box-sizing: border-box;
+  font-size: 16px;
+}
+
+.grid-display{
+  grid-template-rows: 14% 10% 11.75% 9.5% 9.5% 9.5% 8.75% 27%;
+  grid-template-columns: 10% 10% 4.5% 5% 50.5% 15% 5%;
+}
+
+.topnav {
+  grid-column: 3/6;
+  grid-row: 1/2
+}
+
+.logo {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.mainbox {
+  grid-column: 2/4;
+  grid-row: 5/6;
+  background: #FDE5AE;
+  border: 2px solid #AA8735;
+}
+
+.topbox {
+  grid-column: 2/4;
+  grid-row:4/5;
+  border: 2px solid #AA8735;
+  border-width: 0px 2px 0px 0px;
+}
+
+.bottombox {
+  grid-column: 2/4;
+  grid-row: 6/7;
+  border: 2px solid #AA8735;
+  border-width: 0px 0px 0px 2px;
+}
+
+.bottomfiller {
+  border: 2px solid #AA8735;
+  grid-row: 7/10;
+  grid-column: 2/4;
+  border-width: 0px 0px 0px 2px;
+}
+
+.topfiller {
+  border: 2px solid #AA8735;
+  grid-column: 2/4;
+  grid-row: 1/4;
+  border-width: 0px 2px 0px 0px;
+}
+
+.leftfiller {
+  border: 2px solid #AA8735;
+  grid-column: 1/2;
+  grid-row: 5/6;
+  border-width: 0px 0px 2px 0px;
+}
+
+.rightfiller {
+  border: 2px solid #AA8735;
+  grid-column: 4/5;
+  grid-row: 5/6;
+  border-width: 2px 0px 0px 0px;
+}
+
+.rightrightfiller {
+  border: 2px solid #AA8735;
+  grid-column: 7/8;
+  grid-row: 5/6;
+  border-width: 2px 0px 0px 0px;
+}
+
+.mainbox a {
+  color: #AA8735;
+  text-decoration: none;
+}
+
+/* .topbox, .bottombox a {
+  color: #A7A7A7;
+  text-decoration: none;
+} */
+
+#topClick, #bottomClick {
+  color: #A7A7A7;
+  text-decoration: none;
+}
+
+.topbox, .bottombox, .mainbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+#top-message {
+  display: none;
+}
+
+/*Process Page Styles*/
+
+.process-flex-container{
+  display: flex;
+  grid-row: 3/9;
+  grid-column: 5/7;
+  overflow: scroll;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.process-flex-container::-webkit-scrollbar { 
+  width: 0 !important 
+}
+
+.flex-item {
+  display: flex;
+  width; 100%;
+  height: 60%;
+  padding: 1em;
+}
+
+.process-text {
+  width: 55%;
+  padding: 2em;
+  line-height: 1.5;
+}
+
+.process-img {
+  width: 45%;
+  margin: 1em;
+  padding: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.number {
+  font-size: 1.8em;
+  font-style: bold;
+}
+
+/* .process-one{
+  background: pink;
+} */
+
+.process-two {
+  flex-direction: row-reverse;
+}
+
+/* .process-three {
+  background: orange;
+} */
+
+h2 {
+  width: 100%;
+  line-height: 0.5;
+}
+
+.process-one .process-img {
+  background-image: url('https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fperry-grone-lbLgFFlADrY-unsplash.jpg?v=1563334964450');
+}
+
+.process-two .process-img {
+  background-image: url('https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fmarvin-meyer-HN1roKF-DS4-unsplash.jpg?v=1563335248873');
+}
+
+.process-three .process-img {
+  background-image: url('https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fmiguel-ibanez-7vfLQTWpA4g-unsplash.jpg?v=1563335248154');
+}
+
+
+/* .bottombox a:visited{
+  opacity: 0;
+  transition: opacity 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+.topbox a:visted{
+  opacity: 0;
+  transition: opacity 0.8s;
+  transition-timing-function: ease-in-out;
+} */
+
+/* People Styles */
+
+.people-flex-container {
+  display: flex;
+  grid-row: 2/9;
+  grid-column: 5/7;
+  overflow: scroll;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 2em;
+  margin: 1em;
+  padding-top: 0em;
+}
+
+.people-flex-container::-webkit-scrollbar { 
+  width: 0 !important 
+}
+
+.description {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 1em;
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+.design-slides {
+  display: grid;
+  grid-template-columns: 35% 25% 40%;
+  grid-template-rows: 35% 40% 25%;
+  margin: 2em;
+  box-sizing: border-box;
+}
+
+.management-slides {
+  display: grid;
+  grid-template-columns: 35% 25% 40%;
+  grid-template-rows: 35% 40% 25%;
+  margin: 2em;
+  grid-row: 5/7;
+  box-sizing: border-box;
+}
+
+.people-flex-container h2 {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  font-style: bold;
+  text-align: center;
+  color: #AA8735;
+}
+
+.w3-content, .w3-display-container {
+  grid-row: 4/7;
+  grid-column: 5/7;
+}
+
+.w3-button {
+  color: #AA8735;
+  font-size: 1.5em;
+}
+
+.w3-button:hover {
+  background-color: white !important;
+  color: #FDE5AE !important;
+}
+
+.w3-button:focus {
+  border: none;
+  outline: none;
+}
+
+.circle {
+  grid-row: 1/3;
+  grid-column: 1/2;
+/*   width: ;
+  height: 12em;
+  border-radius: 50%; */
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle img {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  
+}
+
+.person {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 2px solid #AA8735;
+  margin-left: 1em;
+  margin-right: 1em;
+  
+}
+
+.name {
+  font-size: 1.2em;
+  font-style: bold;
+}
+
+.slide-one .img-one {
+  background: url('https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fangelo-pantazis-h0AnGGgseio-unsplash.jpg?v=1563381004435');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-one .img-two {
+  background: url('https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Ftegan-mierle-ioyEITUD2G8-unsplash.jpg?v=1563380963167');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-two .img-one {
+  background: url('https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fmatthew-brodeur-DH_u2aV3nGM-unsplash.jpg?v=1563384693177');
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.slide-two .img-two {
+  background: url('https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fchris-lawton-5IHz5WhosQE-unsplash.jpg?v=1563384692341');
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.img-one {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  margin: 1em;
+  padding: 1em;
+}
+
+.img-two {
+  grid-row: 2/4;
+  grid-column: 3/4;
+  margin: 2em;
+  margin-left: 1em;
+}
+
+.people-text {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  padding: 0em 2em 1em 1em;
+  overflow: wrap;
+  font-size: 0.9375em;
+}
+
+.design-slides, .management-slides {
+  display: none;
+}
+
+.people-flex-container {
+  display: none;
 }

@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/studiostyle.css">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+
+     <!-- import the webpage's javascript file -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+  
   </head>  
   <body>
     <div class="grid-display">
@@ -35,6 +39,191 @@
         </li>
       </ul>
     </nav>
+      
+    <div class="mainbox" data-message="">
+      <a id="mainClick" href="#">
+        <p id="main-message">
+          Process
+        </p>
+      </a>
+      </div>
+    <div class="topbox" data-message="Process">
+      <a id="topClick" href="#">
+        <p id="top-message">
+          Process
+        </p>
+      </a>
+      </div>
+    <div class="bottombox" data-message="People">
+      <a id="bottomClick" href="#">
+        <p id="bottom-message">
+          People
+        </p>
+      </a>
     </div>
+    <div class="bottomfiller">
+    </div>
+    <div class="topfiller">
+    </div>
+    <div class="leftfiller">
+    </div>
+    <div class="rightfiller">
+    </div>
+    <div class="rightrightfiller">
+    </div>   
+      
+<!--      Process Page html  -->
+      
+      <div class="process-flex-container">
+        <div class="flex-item process-one">
+           <div class="process-text">
+          <h2>
+              <span class="number">1</span> Collaborate
+          </h2>
+          <p>
+            If you really enjoy spending your vacation ‘on water’ or would like to try something new and exciting for the first time, then you can consider a houseboat vacation. There are so many fun things to do and so many great landscapes to see on a houseboat vacation! then you can consider a houseboat vacation.
+          </p>
+          </div>
+          <div class="process-img">
+          </div>
+        </div>
+        <div class="flex-item process-two">
+          <div class="process-text">
+          <h2>
+              <span class="number">2</span> Iterate
+          </h2>
+          <p>
+            If you really enjoy spending your vacation ‘on water’ or would like to try something new and exciting for the first time, then you can consider a houseboat vacation. There are so many fun things to do and so many great landscapes to see on a houseboat vacation! then you can consider a houseboat vacation.
+          </p>
+          </div>
+          <div class="process-img">
+          </div>
+        </div>
+        <div class="flex-item process-three">
+          <div class="process-text">
+          <h2>
+              <span class="number">3</span> Create
+          </h2>
+          <p>
+            If you really enjoy spending your vacation ‘on water’ or would like to try something new and exciting for the first time, then you can consider a houseboat vacation. There are so many fun things to do and so many great landscapes to see on a houseboat vacation! then you can consider a houseboat vacation.
+          </p>
+          </div>
+          <div class="process-img">
+          </div>
+        </div>
+      </div>
+      
+<!--       People Page html -->
+      
+      <div class="people-flex-container">
+        <div class="description">
+          <p>
+            If you really enjoy spending your vacation ‘on water’ or would like to try something new and exciting for the first time, then you can consider a houseboat vacation. There are so many fun things to If you really enjoy spending your vacation ‘on water’ or would like to try something new and exciting for the first time, then you can consider a houseboat vacation. There are so many fun things to do and so many great landscapes to see on a houseboat vacation! then you can consider a houseboat vacation.
+do and so many great landscapes to see on a houseboat vacation! then you can consider a houseboat vacation.
+          </p>
+        </div>
+        
+        
+<!--         Design Slider -->
+        
+        <h2>
+          Design Team
+        </h2>
+        
+        <div class="w3-content w3-display-container">
+          <button class="w3-button w3-display-left" onclick="plusDivsDesign(-1)" style="left:-2%; top:50%">&#10094;</button>
+          <button class="w3-button w3-display-right" onclick="plusDivsDesign(+1)" style="right:-2%; top:50%">&#10095;</button>
+          <div class="design-slides slide-one">
+            <div class="circle">
+              <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fdan-ROJFuWCsfmA-unsplash.jpg?v=1563379883742">
+            </div>
+            <div class="person">
+              <p>
+                <span class="name">Ishita Pisat</span> <br> <span class="position">Junior Architect </span>
+              </p>
+            </div>
+            <div class="img-one">
+            </div>
+            <div class="img-two">
+            </div>
+            <div class="people-text">
+              <p>
+                If you really enjoy exciting for the first and so many great for the first and so many great landscapes to see on a houseboat vacation! then you can consider a houseboat vacation.
+              </p>
+            </div>
+          </div>
+          <div class="design-slides slide-two">
+            <div class="circle">
+              <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fevan-dvorkin-oJNh8bIr-rA-unsplash.jpg?v=1563380758410">
+            </div>
+            <div class="person">
+              <p>
+                <span class="name">Ishita Pisat</span> <br> <span class="position">Junior Architect </span>
+              </p>
+            </div>
+            <div class="img-one">
+            </div>
+            <div class="img-two">
+            </div>
+            <div class="people-text">
+              <p>
+                If you really enjoy for the first time, then you can are so many fun things to do and so many great landscapes to see on a houseboat vacation! then you can consider a houseboat vacation.
+              </p>
+            </div>
+          </div>
+        </div> 
+    
+<!--         Management Slider -->
+        
+        <h2>
+          Management Team
+        </h2>
+        
+     <div class="w3-content w3-display-container">
+          <button class="w3-button w3-display-left" onclick="plusDivsManagement(-1)" style="left:auto; top:50%">&#10094;</button>
+          <button class="w3-button w3-display-right" onclick="plusDivsManagement(+1)" style="right:1%; top:50%">&#10095;</button>
+          <div class="management-slides slide-one">
+            <div class="circle">
+              <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fdan-ROJFuWCsfmA-unsplash.jpg?v=1563379883742">
+            </div>
+            <div class="person">
+              <p>
+                <span class="name">Ishita Pisat</span> <br> <span class="position">Junior Architect </span>
+              </p>
+            </div>
+            <div class="img-one">
+            </div>
+            <div class="img-two">
+            </div>
+            <div class="people-text">
+              <p>
+                If you really enjoy exciting for the first time, do and xciting for the first time, do and so many great landscapes to see on a houseboat vacation! then you can consider a houseboat vacation.
+              </p>
+            </div>
+          </div>
+          <div class="management-slides slide-two">
+            <div class="circle">
+              <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fevan-dvorkin-oJNh8bIr-rA-unsplash.jpg?v=1563380758410">
+            </div>
+            <div class="person">
+              <p>
+                <span class="name">Ishita Pisat</span> <br> <span class="position">Junior Architect </span>
+              </p>
+            </div>
+            <div class="img-one">
+            </div>
+            <div class="img-two">
+            </div>
+            <div class="people-text">
+              <p>
+                If you really enjoy for the first time, then you can are so many fun things to do and so many great landscapes to see on a houseboat vacation! then you can consider a houseboat vacation.
+              </p>
+            </div>
+          </div>
+        </div> 
+      </div>
+      </div>
+      
+    <script src="/script.js" defer></script>
   </body>
 </html>

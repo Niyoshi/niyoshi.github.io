@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="/projectsstyle.css">
     
     <!-- import the webpage's javascript file -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     <script src="/script.js" defer></script>
+    <script src="/filter.js" defer></script>
   </head>  
   <body>
     <div class="grid-display">
@@ -39,13 +43,13 @@
         <nav class="sizenav">
           <ul>
             <li>
-              <a class="small" href="#">Small</a>
+              <a class="sizeToggle" id="small" data-index="0" href="#">Small</a>
             </li>
             <li>
-              <a class="medium" href="#">Medium</a>
+              <a class="sizeToggle" id="medium" data-index="1" href="#">Medium</a>
             </li>
             <li>
-              <a class="large" href="#">Large</a>
+              <a class="sizeToggle" id="large" data-index="2" href="#">Large</a>
             </li>
           </ul>
         </nav>
@@ -54,19 +58,19 @@
         <nav class="typenav">
           <ul>
             <li>
-              <a class="residential" href="#">Residential</a>
+              <a class="typeToggle" id="residential" data-index="0" href="#">Residential</a>
             </li>
             <li>
-              <a class="commercial" href="#">Commercial</a>
+              <a class="typeToggle" id="commercial" data-index="1" href="#">Commercial</a>
             </li>
             <li>
-              <a class="institutional" href="#">Institutional</a>
+              <a class="typeToggle" id="institutional" data-index="2" href="#">Institutional</a>
             </li>
             <li>
-              <a class="recrearional" href="#">Recreational</a>
+              <a class="typeToggle" id="recrearional" data-index="3" href="#">Recreational</a>
             </li>
             <li>
-              <a class="interiors" href="#">Interiors</a>
+              <a class="typeToggle" id="interiors" data-index="4" href="#">Interiors</a>
             </li>
           </ul>
         </nav>
@@ -76,63 +80,63 @@
       <div class="project-photos">
         <div class="column col-1">
           <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia3.png?v=1562460129186">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2FPicture1.png?v=1562460132745">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
-        </a>
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia3.png?v=1562460129186">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2FPicture1.png?v=1562460132745">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
+          </a>
         </div>
         <div class="column col-2">
           <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia1.png?v=1562460129007">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia3.png?v=1562460129186">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia2.png?v=1562460130180">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2FPicture1.png?v=1562460132745">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
-        </a> 
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
-        </a>
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia1.png?v=1562460129007">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia3.png?v=1562460129186">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia2.png?v=1562460130180">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2FPicture1.png?v=1562460132745">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
+          </a> 
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
+          </a>
         </div>
         <div class="column col-3">
           <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia1.png?v=1562460129007">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia3.png?v=1562460129186">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia2.png?v=1562460130180">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2FPicture1.png?v=1562460132745">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
-        </a>
-        <a href="projectpage.html">
-          <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
-        </a>
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia1.png?v=1562460129007">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia3.png?v=1562460129186">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fimperia2.png?v=1562460130180">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2FPicture1.png?v=1562460132745">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
+          </a>
+          <a href="projectpage.html">
+            <img src="https://cdn.glitch.com/deb5391d-0508-4475-a0f6-2a78360eb742%2Fpnb.png?v=1562460133254">
+          </a>
         </div>
       </div>
     </div>
